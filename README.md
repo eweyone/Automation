@@ -1,2 +1,2 @@
-ITMO Automation project
+# ITMO Automation project
 Репозиторий для работа по автоматизированному тестированию.
