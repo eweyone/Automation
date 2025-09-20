@@ -11,4 +11,5 @@ class Page:
 
 home = Page('/images/logo.png')
 
+
 home.get()

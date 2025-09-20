@@ -18,6 +18,7 @@ class Soda:
         else:
             print('Обычная газировка')
 
+
 drink_one = Soda('Сироп')
 drink_two = Soda()
 

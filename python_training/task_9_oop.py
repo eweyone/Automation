@@ -41,5 +41,6 @@ class ButtonTwo:
 # Создание экземпляров класса
 home_two = ButtonTwo('Домой', '/home', 'button#home')
 
+
 # Вызов метода
 print(home_two.click())
