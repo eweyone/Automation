@@ -12,10 +12,10 @@ from selenium.webdriver.common.by import By
 
 
 
-driver = webdriver.Chrome()
-driver.get('https://www.saucedemo.com/')
-
 def check_elements():
+    driver = webdriver.Chrome()
+    driver.get('https://www.saucedemo.com/')
+
     username = driver.find_element(By.CSS_SELECTOR, '[id="user-name"]')
     password = driver.find_element(By.CSS_SELECTOR, '[id="password"]')
     submit_button = driver.find_element(By.CSS_SELECTOR, '[id="login-button"]') # Кнопка называется не Submit, а Login
