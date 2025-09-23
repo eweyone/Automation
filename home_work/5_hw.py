@@ -10,14 +10,21 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+
+
 driver = webdriver.Chrome()
 driver.get('https://www.saucedemo.com/')
 
-username = driver.find_element(By.CSS_SELECTOR, '[id="user-name"]')
-password = driver.find_element(By.CSS_SELECTOR, '[id="password"]')
-submit_button = driver.find_element(By.CSS_SELECTOR, '[id="login-button"]') # Кнопка называется не Submit, а Login
+def check_elements():
+    username = driver.find_element(By.CSS_SELECTOR, '[id="user-name"]')
+    password = driver.find_element(By.CSS_SELECTOR, '[id="password"]')
+    submit_button = driver.find_element(By.CSS_SELECTOR, '[id="login-button"]') # Кнопка называется не Submit, а Login
 
-if username and password and submit_button is None:
-    print('Элементы не найдены')
-else:
-    print('Элементы найдены')
+    if username and password and submit_button:
+        print('Элементы найдены')
+    else:
+        print('Элементы не найдены')
+
+    driver.quit()
+
+check_elements()
