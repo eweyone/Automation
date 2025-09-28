@@ -1,2 +1,2 @@
 # ITMO Automation project
-Репозиторий для работ по автоматизированному тестированию.
+This repository contains the first homework assignments where I learned syntax, operators, and working with libraries.
